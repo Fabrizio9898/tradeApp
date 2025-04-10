@@ -1,0 +1,33 @@
+{
+  "name": "tradeapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "start": "node apps/api/dist/main.js",
+    "dev:frontend": "turbo dev --filter=client",
+    "dev:backend": "turbo run dev --filter=api",
+    "build:frontend": "turbo run build --filter=client",
+    "build:backend": "turbo run build --filter=api"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fabrizio9898/tradeApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "apps/*"
+  ],
+  "packageManager": "npm@10.9.2",
+  "bugs": {
+    "url": "https://github.com/Fabrizio9898/tradeApp/issues"
+  },
+  "homepage": "https://github.com/Fabrizio9898/tradeApp#readme",
+  "description": "",
+  "devDependencies": {
+    "turbo": "^2.5.0"
+  }
+}
